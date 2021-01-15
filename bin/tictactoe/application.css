@@ -1,0 +1,30 @@
+/*
+JavaFX Tic Tac Toe Css
+This provides the basis for fonts, colours, and texturing of the buttons and general calculator layout.
+The document serves as a resource that describes the style in which FXML objects should be displayed.
+April 7, 2020
+Garrett Miller-Junk
+ */
+ /*add CSS for the basic FXML button that the player will be playing on */
+.button{
+	-fx-focus-color: transparent;
+	-fx-background-insets: -1, 0, 1, 1;
+	-fx-font-weight: bold;
+	-fx-font-size: 36;
+	-fx-text-fill: white;
+	-fx-background-color: black;
+}
+/*if the user is currently hovering over the button, change the buttons background to a dark grey color */
+.button:hover{
+	-fx-focus-color: transparent;
+	-fx-background-insets: -1, 0, 1, 1;
+	-fx-font-weight: bold;
+	-fx-font-size: 36;
+	-fx-text-fill: red;
+	-fx-background-color: #A9A9A9;
+}
+/* If a button is declared a winning button, change its background to a light green with a radial gradient, change its text color to purple*/
+.winning-button{
+	-fx-background-color: radial-gradient(radius 100%, white, #FF00FF, #800800);
+	-fx-text-fill: lawngreen;
+}

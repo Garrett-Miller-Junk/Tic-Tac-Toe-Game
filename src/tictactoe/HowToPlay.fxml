@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.TicTacToeController">
+   <children>
+      <TextArea layoutX="36.0" layoutY="14.0" prefHeight="216.0" prefWidth="550.0" text="How To Play: In the game Tic Tac Toe, players take alternating turns to attempt to score 3 tiles of their respective letter in a row. These coud be 3 horizontally, 3 vertically, or even diagonally.  To choose a tile, place your mouse over the tile and click. If you are playing single player, the computer will make its move immediatly after. If you are playing multiplayer, the next player will move the mouse to where they want to play and click. This will alternate until a player gets 3 in a row, or all tiles have been filled." wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="howToButton" layoutX="184.0" layoutY="244.0" mnemonicParsing="false" onAction="#closeCurrentWindow" prefHeight="120.0" prefWidth="216.0" text="CLOSE" />
+   </children>
+</Pane>
+
+

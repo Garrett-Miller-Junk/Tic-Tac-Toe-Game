@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.TicTacToeController">
+   <children>
+      <Slider fx:id="howDifficult" blockIncrement="1.0" layoutX="205.0" layoutY="109.0" max="8.0" onMouseDragged="#changeTextHandler" />
+      <Text layoutX="200.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AI Difficulty:" wrappingWidth="140.00000953674316" />
+      <CheckBox fx:id="single" layoutX="200.0" layoutY="174.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Single player" />
+      <CheckBox fx:id="first" layoutX="200.0" layoutY="200.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="232.0" text="Player always goes First" />
+      <TextField fx:id="difficultyText" layoutX="200.0" layoutY="140.0" text="Easy" />
+      <Text layoutX="205.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings:" wrappingWidth="179.13671875">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Button layoutX="182.0" layoutY="257.0" mnemonicParsing="false" onAction="#settingsSaveHandler" prefHeight="111.0" prefWidth="225.0" text="Save" />
+   </children>
+</Pane>
